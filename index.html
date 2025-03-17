@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de validación</title>
+</head>
+<body>
+    <h1>Formulario de validación</h1>
+    <form id="myForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <span class="mensaje-error" id="error-nombre"></span>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <span class="mensaje-error" id="error-email"></span>
+
+        <div class="mb-3">
+            <label for="contraseña">Contraseña:</label>
+            <div class="password-wrapper">
+                <input type="password" id="contraseña" class="form-control" />
+                <div class="toggle-button" data-target="contraseña">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="eye-icon">
+                      <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                      <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                   </svg>
+                </div>
+             </div>
+         </div>
+        <span class="mensaje-error" id="error-contraseña"></span>
+
+        <div class="mb-3">
+            <label for="confirmacionContraseña">Confirmación de contraseña:</label>
+            <div class="password-wrapper">
+                <input type="password" id="confirmacionContraseña" class="form-control" />
+                <div class="toggle-button" data-target="confirmacionContraseña">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="eye-icon">
+                      <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                      <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                   </svg>
+                </div>
+             </div>
+         </div>
+        <span class="mensaje-error" id="error-confirmacion"></span>
+    
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

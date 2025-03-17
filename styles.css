@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor del formulario */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #555;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f9f9f9;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+/* ✅ Efecto hover en inputs */
+input:hover {
+    background: #ffffff;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ✅ Efecto cuando se enfoca el input */
+input:focus {
+    background: white;
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #999;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* ✅ Efecto hover en botón */
+button:hover {
+    background: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Efecto de crecimiento sutil */
+}
+
+/* ✅ Efecto active (cuando el botón es presionado) */
+button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Mensajes de error y éxito */
+.mensaje-error {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.error {
+    color: red;
+    opacity: 1;
+}
+
+.correcto {
+    color: green;
+    opacity: 1;
+}
+
+/* ✅ Efecto hover en mensajes de error */
+.error:hover {
+    color: darkred;
+    font-weight: bold;
+}
+
+.correcto:hover {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    form {
+        width: 100%;
+    }
+
+    input {
+        width: 85%;
+    }
+}
+
+.container {
+    width: 500px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-button {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: unset;
+  right: 12px;
+  cursor: pointer;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+}
+
