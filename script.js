@@ -17,8 +17,7 @@ function mostrarMensaje(id, mensaje, esCorrecto) {
 
 function validarCampo(idInput, idError, validacion, mensajeError, mensajeCorrecto) {
 
-    const input = document.getElementById(idInput);
-    const valor = input.value.trim(); 
+    const valor = document.getElementById(idInput).value.trim();
 
     if (validacion(valor)) {
         mostrarMensaje(idError, mensajeCorrecto, true); 
